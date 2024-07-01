@@ -1,0 +1,8 @@
+from twilio.rest import Client
+account_sid = "AC8ceb6bfb8055635e92b591c7feb6f7f2"
+auth_token = "008551111f3bd83cc335f52f10acf396"
+client = Client(account_sid, auth_token)
+client.api.account.messages.create(
+    to="+91-123456789",
+    from_="+12513124209" ,
+    body="sms" )
